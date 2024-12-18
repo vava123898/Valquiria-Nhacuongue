@@ -1,0 +1,501 @@
+/* Estilo geral */
+    {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    com os meus codigos background-color: black;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.menu-desktop ul {
+    list-style: none;
+    /* Remove os pontos da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Deixa os itens lado a lado */
+    justify-content: space-around;
+    /* Distribui os itens igualmente */
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Cor dos links */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: brown;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo {
+    color: brown;
+    font-size: 38px;
+    text-align: center;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px brown;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* Deixa o cabeçalho fixo */
+    top: 0;
+    /* Fixa no topo */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Ocupa a largura inteira */
+    background-color: #000;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos */
+    padding: 10px 0;
+    /* Espaçamento interno (vertical) */
+}
+
+header {
+    padding: 50px 4%;
+
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    /* Remove sublinhado */
+    display: inline-block;
+    transition: .2s;
+    /* Animação suave ao passar o mouse */
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+header nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 100px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site h2 {
+    color: #fff;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+/* Estilo da imagem no topo do site */
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s infinite ease-in-out alternate;
+    width: 100%;
+    max-width: 1000px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+        /* Posição inicial da imagem */
+    }
+
+    100% {
+        top: 30px;
+        /* Posição final da imagem (movimento de flutuação) */
+    }
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+section.Especialidade {
+    padding: 40px 4%;
+}
+
+section.Especialidade .flex {
+    gap: 60px;
+}
+
+.Especialidade .Especialidade-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+
+}
+
+.Especialidade .Especialidade-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff70;
+
+
+}
+
+
+.Especialidade .Especialidade-box svg {
+    width: 70px;
+    height: 70px;
+    color: brown;
+}
+
+.Especialidade .Especialidade-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILOS DO SOBRE*/
+
+section.sobre {
+    padding: 240px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line: height 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: brown;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre img {
+    max-width: 90%;
+    height: auto;
+    flex: 1;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: brown;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+
+/* ESTILOS DOS PROJECTOS*/
+    {
+    margin: 0;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: brown;
+}
+
+main {
+    padding: 2rem;
+}
+
+.portfolio {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: ;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.portfolio-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .portfolio {
+        padding: 1rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ESTILOS DO FORMULARIO DE CONTATO*/
+section.formulario {
+    padding: 100px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #282828b2;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: brown;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILOS DO RODAPÉ*/
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid brown;
+
+}
+
+footer .line-footer p s {
+    color: brown;
+    font-size: 30px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSE GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+
+
+    /* CABEÇALHO*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+}
+
+/* TOPO DO SITE*/
+
+section.topo-do-site .flex {
+    gap: 40px;
+}
+
+section.topo-do-site {
+    padding: 20px 8%;
+}
+
+.topo-do-site h1 {
+    font-size: 30px;
+}
+
+.topo-do-site .img-topo-site img {
+    width: 100%;
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+section.Especialidade {
+    padding: 40px 8%;
+}
+
+/*SOBRE*/
+
+section.sobre {
+    padding: 240px 8%;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+.sobre .txt-sobre p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.btn-social{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-sobre img{
+    width: 100%;
+}
+
+/* ESTILOS DOS PROJECTOS*/
+
+section.portfolio .flex{
+    gap: 60px;
+}
